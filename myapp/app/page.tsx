@@ -4,6 +4,7 @@ export default function Home() {
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Welcome</h1>
       </div>
+      <a href="/login"> login</a>
     </div>
   );
 }

@@ -37,6 +37,12 @@ export default function LoginPage() {
           </button>
         </form>
       </div>
+      <p className="text-center">
+        NO ACC?{" "}
+        <a href="/register" className="text-blue-600">
+          register
+        </a>
+      </p>
     </div>
   );
 }
