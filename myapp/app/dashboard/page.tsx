@@ -1,6 +1,7 @@
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import LogoutButton from "./LogoutButton";
+import { SessionProvider } from "next-auth/react";
 
 export default async function DashboardPage() {
   const session = await auth();

@@ -15,11 +15,11 @@ datasource db {
 model User {
   id            String    @id @default(auto()) @map("_id") @db.ObjectId
   name          String?
-  email         String    @unique
+  email         String    
   emailVerified DateTime?
   image         String?
   role          String    @default("user") // "user" | "admin"
-
+  hashedPassword String?  // <- энэ нэмэгдсэн байх ёстой
   accounts Account[]
   sessions Session[]
 
